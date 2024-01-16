@@ -1,57 +1,52 @@
-/* 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
 
-  nav{
-    background-color: cornflowerblue;
-    height: 80px;
+   body{
     width: 100%;
-}
-label.logo{
-    color: red;
-    font-size: 60px;
-    padding: 0 100px;
-    font-weight: bold;
-}
-nav ul{
-    float: right;
-    margin-right: 20px;
+   }
+   main{
+    width: 90%;
+    margin: 0 auto;
+   }
+
+   nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   margin: 20px;
    
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: aliceblue;
-    font-size: 17px;
+   
+   }
+   label{
+    color: #131318;
+
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: capitalize;
+   }
+   .span{
+    color: #FF5400;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+   }
+   .nav-ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 15px;
+    text-align: center;
+   }
+  .nav-ul li a{
+    text-decoration: none;
     text-transform: uppercase;
-}
-a:hover{
-    background-color: antiquewhite;
-}
-.checkbtn{
-    font-size: 30px;
-
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display:none;
-}
-#check{
-    display: none;
-} */
-
-
-
+  }
+  a:hover{
+    color: #5A5A5D;
+  }
 .header-section{
      background-image: url(Images/Group\ 13\ \(1\)\ \(1\).png);
      background-position: center;
@@ -222,19 +217,23 @@ font-size: 18px;
     line-height: 26px; /* 162.5% */
 }
 /* choose img section related style */
-/* .choose-img-section{
+.choose-img-section{
 
       width: 57%;
 }
 .img-content{
-    display: flex;
+  
   
     background-color: #FF5400;
 }
-.img-content .img-path{
-    width: 100%;
-} */
 
+.img-content{
+       max-width: 1100px;
+    background-color: red;
+}
+.img-content img{
+   max-width: 500px;
+}
 
 
 /* why-choose realated style */
@@ -269,14 +268,15 @@ font-size: 18px;
     
 }
 .icon-content-div{
-    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, 0.201);
     width:60% ;
     padding: 20px 30px;
     margin: 0 auto;
+    border-radius: 8px;
 }
 .icon-title{
     color: #131318;
-   
+    
     font-family: Mulish;
     font-size: 24px;
     font-style: normal;
@@ -299,8 +299,9 @@ line-height: 26px; /* 162.5% */
 }
 
 .icon-contect-last-div{
-  background-color: cadetblue;
+    background-color: rgba(95, 158, 160, 0.201);
 width:50% ;
+font-size: 24px;
 padding: 20px 30px;
 margin: 0 auto;  
 } 
@@ -308,6 +309,8 @@ margin: 0 auto;
     text-align: center;
     margin-top: 80px;
 }
+
+
 .discocunt-title{
     color: #131318;
     text-align: center;
@@ -322,14 +325,8 @@ margin: 0 auto;
 
 /* section-5 discount-section  */
 .discount-img-container1{
-      margin-top: 30px 0px;
-   position: relative;
-
-}
-
-.discount-img-container3{
-  
-    margin: 30px 0px;
+      margin-top: 40px 0px;
+       position: relative;
 
 }
 .discuont-img{
@@ -343,23 +340,34 @@ margin: 0 auto;
     padding: 40px 40px;
     position: absolute;
     border-radius: 10px;
-    width: 40%;
-    height: 60%;
+   
+    /* width: 40%;
+    height: 60%; */
     border: 2px solid rgb(255, 255, 255);
     top: 30px;
     right: 40px;
 }
-.discount-content-div{
+.discount-content-div13{
     background-color:rgba(240, 248, 255, 0.904);
-    width: 40%;
-    height: 60%;
+   
     padding: 20px 40px;
     position: absolute;
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
-    top: 50px;
+    top: 20px;
     left: 40px;
     /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.37); */
+}
+.tour-price{
+    margin: 5px;
+}
+.tour-title{
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+.book{
+    margin: 0px;
 }
 .btn{
 margin-top: 10px;
@@ -410,6 +418,7 @@ margin-top: 10px;
     background-color: rgba(12, 2, 2, 0.18);
     padding: 10px 50px;
     border-radius: 8px;
+     height: 80%;
 
 }
 .newsletter-input, .newsletter-btn{
@@ -431,6 +440,8 @@ margin-top: 10px;
 }
 .news-latter-img-content{
     width: 70%;
+    position: relative;
+   
 }
 .news-latter-title{
     color: #131318;
@@ -452,4 +463,86 @@ margin-top: 10px;
 }
 .newslatter-img{
     width: 100%;
+   
+}
+.save70-content{
+    background-color: #e64a16;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 55px;
+    right: 5px;
+    transform: rotate(-19.628deg);
+}
+.save-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.save-up-title{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+footer{
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-section{
+    text-align: center;
+}
+.footer-section{
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.164);
+}
+.tour-travel-title{
+    color: var(--Dark-01, #131318);
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.travel{
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.tour-description{
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px
+}
+.icon-div{
+    color: cornflowerblue;
+    
+}
+.icon-div i{
+ margin: 0px 10px;
+ padding-bottom: 20px;
+}
+.last-title{
+    text-align: center;
+    font-size: 18px;
+    margin: 0px;
+    padding: 20px;
 }
