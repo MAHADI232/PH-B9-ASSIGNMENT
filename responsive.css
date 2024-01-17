@@ -1,11 +1,83 @@
 
 
+/* resposive */
+
+@media screen  and (max-width : 576px) {
+    nav{
+        padding: 10px 5%; 
+     } 
+     .icon{
+        display: inline-flex;
+     }
+
+     .icon #close-icon{
+        display: none;
+     }
+     #check:checked~.icon #menu-icon{
+        display: none;
+     }
+     .res-nav{
+        display: block;
+     }
+
+     #check:checked~.icon #close-icon{
+        display: block;
+     }
+   .res-nav{
+        position: absolute;
+        top: 70px;
+        left: 5;
+        width: 90%;
+        height: 0;
+        background-color: darkblue;
+        backdrop-filter: blur(50px);
+        transition: 0.3s;
+        overflow: hidden;
+
+     }
+     #check:checked~.res-nav{
+        height: 11rem;
+     }
+    
+     .res-nav a{
+        display: block;
+        font: 20px;
+        margin: 16px 0px;
+        text-align: center;
+        transition: 0.3s ease;
+     }
+     #check:checked~.res-nav a{
+       transform: translateY(0);
+     }
+}
+
+@media screen and (max-width :992px) and (min-width : 576px) {
+    
+    nav{
+       padding: 1rem 5%; 
+    }
+}
+ /* responsive nav */
+
+
 @media screen and (max-width : 576px) {
    
      body{
         padding: 0 15px;
         margin: 0 auto;
      }
+
+     
+
+.disition-img-content1{
+   grid-template-columns: none;
+ 
+}
+.disition-img-content13{
+   grid-template-columns: none;
+
+
+}
      .explore-selection-content,
      .popular-container,
      .choose-icon-container,
@@ -19,6 +91,7 @@
      nav{
       padding: 0px 20px;
       text-align: center;
+    
      }
      .discount-content-div13{
       width: 70%;
